@@ -53,7 +53,7 @@
   </div>
 </div>
 <header class="header header_style_01">
-  <nav class="megamenu navbar navbar-default">
+  <nav class="megamenu navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
         <button
@@ -74,7 +74,7 @@
         /></a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right"  style="display: inline-block">
           <li *ngFor="let item of pages">
             <a [ngClass]="{'active':  itemSelected?.link === item.link }"  (click)="itemClicked(item)" routerLink="{{ item.link }}">{{ item.name }}</a>
           </li>

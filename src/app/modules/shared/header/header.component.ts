@@ -11,11 +11,11 @@ export class HeaderComponent implements OnInit {
   itemSelected;
 
   pages =  [
-    {name: 'Home', link: 'home', active: false},
-    {name: 'About Us', link: 'about', active: false},
-    {name: 'Our Services', link: 'services', active: false},
-    {name: 'Features', link: 'features',active: false},
-    {name: 'Testimonals', link: 'testimonals', active: false},
+    {name: 'Home', link: 'home'},
+    {name: 'About Us', link: 'about'},
+    {name: 'Our Services', link: 'services'},
+    {name: 'Features', link: 'features'},
+    {name: 'Testimonals', link: 'testimonials'},
     {name: 'Contact', link: 'contact'},
   ];
   constructor() { }
