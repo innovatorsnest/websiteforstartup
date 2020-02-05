@@ -75,14 +75,9 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a routerLink="about">About us</a></li>
-          <li><a routerLink="services">Our Services</a></li>
-          <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
-          <li><a routerLink="features">Features</a></li>
-          <li><a routerLink="testimonials">Testimonials</a></li>
-          <!-- <li><a href="pricing.html">Pricing</a></li> -->
-          <li><a routerLink="contact">Contact</a></li>
+          <li *ngFor="let item of pages">
+            <a [ngClass]="{'active':  itemSelected?.link === item.link }"  (click)="itemClicked(item)" routerLink="{{ item.link }}">{{ item.name }}</a>
+          </li>
         </ul>
       </div>
     </div>
