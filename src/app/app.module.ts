@@ -5,12 +5,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './modules/shared/footer/footer.component';
 import { HeaderComponent } from './modules/shared/header/header.component';
+import { ContactComponent } from './modules/contact/contact.component';
+import { AboutComponent } from './modules/about/about.component';
+import { FeaturesComponent } from './modules/features/features.component';
+import { TestimonialsComponent } from './modules/testimonials/testimonials.component';
+import { ServicesComponent } from './modules/services/services.component';
+import { HomeComponent } from './modules/home/home.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    ContactComponent,
+    AboutComponent,
+    FeaturesComponent,
+    TestimonialsComponent,
+    ServicesComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
