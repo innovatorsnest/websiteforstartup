@@ -1,6 +1,10 @@
 {
   "name": "websiteforstarup",
   "version": "0.0.0",
+  "engines": {
+    "node": "v10.16.3",
+    "npm": "6.9.0"
+  },
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
@@ -8,7 +12,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot --target=production"
+    "postinstall": "ng build --output-path angularapp  --aot --prod"
   },
   "private": true,
   "dependencies": {
@@ -25,6 +29,7 @@
     "bootstrap": "^4.4.1",
     "express": "^4.17.1",
     "jquery": "^3.4.1",
+    "path": "^0.12.7",
     "popper.js": "^1.16.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
@@ -32,6 +37,8 @@
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
+    "@angular/compiler": "~8.2.5",
+    "@angular/compiler-cli": "~8.2.5",
     "@angular-devkit/build-angular": "~0.803.4",
     "@angular/language-service": "~8.2.5",
     "@types/node": "~8.9.4",
@@ -47,10 +54,7 @@
     "karma-jasmine-html-reporter": "^1.4.0",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
-    "tslint": "~5.15.0"
-  },
-  "engines": {
-    "node": "10.16.3",
-    "npm": "6.9.0"
+    "tslint": "~5.15.0",
+    "typescript": "~3.5.3"
   }
 }
