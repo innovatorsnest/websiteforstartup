@@ -11,6 +11,7 @@ import { FeaturesComponent } from './modules/features/features.component';
 import { TestimonialsComponent } from './modules/testimonials/testimonials.component';
 import { ServicesComponent } from './modules/services/services.component';
 import { HomeComponent } from './modules/home/home.component';
+import { OwlModule } from 'ngx-owl-carousel';
 
 
 
@@ -28,7 +29,8 @@ import { HomeComponent } from './modules/home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    OwlModule
   ],
   providers: [],
   bootstrap: [AppComponent]
