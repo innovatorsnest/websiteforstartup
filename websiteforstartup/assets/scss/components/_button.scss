@@ -1,0 +1,41 @@
+/*------------------------------------------------------------------
+    BUTTONS
+-------------------------------------------------------------------*/
+
+.navbar-default .btn-light {
+  padding: 0 20px;
+  margin-left: 15px;
+}
+
+.nav-pills,
+.effect-1:after,
+.nav-pills > li > a,
+.global-radius,
+.btn-brd {
+  -webkit-border-radius: 25px 0px 25px 0px;
+  -moz-border-radius: 25px 0px 25px 0px;
+  border-radius: 25px 0px 25px 0px;
+}
+
+.btn-light {
+  padding: 13px 40px;
+  font-size: 18px;
+  border: 2px solid #fd6802;
+  color: #ffffff;
+  background-color: #fd6802;
+}
+
+.btn-dark {
+  padding: 13px 40px;
+  font-size: 18px;
+  border: 1px solid #ececec !important;
+  color: #1f1f1f;
+  background-color: transparent;
+}
+
+.btn-light:hover,
+.btn-light:focus {
+  border-color: #fd6802;
+  color: rgba(255, 255, 255);
+background: #393939;
+}

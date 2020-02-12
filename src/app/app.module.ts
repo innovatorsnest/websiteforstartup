@@ -11,9 +11,11 @@ import { FeaturesComponent } from './modules/features/features.component';
 import { TestimonialsComponent } from './modules/testimonials/testimonials.component';
 import { ServicesComponent } from './modules/services/services.component';
 import { HomeComponent } from './modules/home/home.component';
-import { OwlModule } from 'ngx-owl-carousel';
+import { NgxModule } from './ngx-boostrap/ngx.module';
 
 
+
+// "postinstall": "ng build --output-path websiteforstartup  --aot --prod"
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { OwlModule } from 'ngx-owl-carousel';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    OwlModule
+    NgxModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
