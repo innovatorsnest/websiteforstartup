@@ -31,9 +31,9 @@ export class HomeComponent implements OnInit {
 
   constructor(carauselConfig: CarouselConfig) {
 
-    // carauselConfig.interval = false;
-    // carauselConfig.noPause = true;
-    // carauselConfig.showIndicators = true;
+    carauselConfig.interval = 1500;
+    carauselConfig.noPause = true;
+    carauselConfig.showIndicators = true;
   }
 
   ngOnInit() {}
