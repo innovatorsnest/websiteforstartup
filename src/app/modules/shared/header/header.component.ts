@@ -12,10 +12,9 @@ export class HeaderComponent implements OnInit {
 
   pages =  [
     {name: 'Home', link: 'home'},
+    {name: 'Ecommerce', link: 'services'},
+    {name: 'Developmemt', link: 'features'},
     {name: 'About Us', link: 'about'},
-    {name: 'Our Services', link: 'services'},
-    {name: 'Features', link: 'features'},
-    {name: 'Testimonals', link: 'testimonials'},
     {name: 'Contact', link: 'contact'},
   ];
   constructor() { }
