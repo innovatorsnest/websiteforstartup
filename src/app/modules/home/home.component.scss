@@ -1,1 +1,24 @@
+.home {
+  &__slider--content {
+    position: absolute;
+    top: 25%;
+  }
+
+
+  &__slider--image {
+    opacity: 0.8;
+  }
+
+  &__slider--title {
+    font-size: 10vh;
+  }
+
+  &__slider--subtitle {
+    font-size: 5vh;
+  }
+}
+
+
+
+
 

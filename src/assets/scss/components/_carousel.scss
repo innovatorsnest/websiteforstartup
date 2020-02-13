@@ -1,19 +1,17 @@
-
-
 .home {
   .home__slider {
-
     .home__slider--image {
       height: 640px;
     }
-
   }
 }
 
-.left.carousel-control.carousel-control-prev  {
-  display: none;
-}
+.slider {
+  .left.carousel-control.carousel-control-prev {
+    display: none;
+  }
 
-.right.carousel-control.carousel-control-next {
-  display: none;
+  .right.carousel-control.carousel-control-next {
+    display: none;
+  }
 }

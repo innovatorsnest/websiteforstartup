@@ -1,15 +1,21 @@
-<carousel class="home" [showIndicators]="showIndicator">
-  <slide class="home__slider" *ngFor="let slide of slides; let index=index">
-    <img class="home__slider--image" [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
-
-    <div class="carousel-caption">
-      <h4>{{slide.title}}</h4>
-      <p>{{slide.subtitle}}</p>
+<carousel class="home" [showIndicators]="false">
+  <slide class="home__slider" *ngFor="let slide of slides; let index = index">
+    <div class="carousel-caption home__slider--content">
+      <h4 class="home__slider--title">{{ slide.title }}</h4>
+      <p class="home__slider--subtitle">{{ slide.subtitle }}</p>
       <div class="slider-content-btn">
-        <a class="button btn btn-light btn-radius btn-brd" href="#">Read More</a>
-        <a class="button btn btn-light btn-radius btn-brd" href="#">Contact</a>
+        <a class="button btn btn-light btn-radius btn-brd" href="#"
+          >{{slide.button}}</a
+        >
+        <!-- <a class="button btn btn-light btn-radius btn-brd" href="#">Contact</a> -->
       </div>
     </div>
+    <img
+      class="home__slider--image"
+      [src]="slide.image"
+      alt="image slide"
+      style="display: block; width: 100%;"
+    />
   </slide>
 </carousel>
 
@@ -110,35 +116,4 @@
   <!-- end container -->
 </div>
 <!-- end section -->
-<div id="testimonials" class="parallax section db parallax-off" style="background-image:url('assets/uploads/parallax_03.jpg');">
-  <div class="container">
-      <div class="section-title text-center">
-          <h3>Our Awesome Clients</h3>
-          <p class="lead">We thanks our clients for believing in us.</p>
-      </div><!-- end title -->
 
-      <hr class="hr1">
-
-      <div class="row logos">
-          <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-              <a href="#"><img src="assets/uploads/logo_01.png" alt="" class="img-repsonsive"></a>
-          </div>
-          <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-              <a href="#"><img src="assets/uploads/logo_02.png" alt="" class="img-repsonsive"></a>
-          </div>
-          <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-              <a href="#"><img src="assets/uploads/logo_03.png" alt="" class="img-repsonsive"></a>
-          </div>
-          <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-              <a href="#"><img src="assets/uploads/logo_04.png" alt="" class="img-repsonsive"></a>
-          </div>
-          <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-              <a href="#"><img src="assets/uploads/logo_05.png" alt="" class="img-repsonsive"></a>
-          </div>
-          <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-              <a href="#"><img src="assets/uploads/logo_06.png" alt="" class="img-repsonsive"></a>
-          </div>
-      </div><!-- end row -->
-
-  </div><!-- end container -->
-</div><!-- end section -->
