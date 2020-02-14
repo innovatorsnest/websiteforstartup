@@ -4,7 +4,6 @@
     top: 25%;
   }
 
-
   &__slider--image {
     opacity: 0.8;
   }
@@ -18,7 +17,29 @@
   }
 }
 
+.how-we-work {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
+.work--image {
+  height: 100%;
+  width: 100%;
+}
 
+.work--title {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  background: #464646;
+  color: #fff;
+  padding: 10px 60px;
+  display: inline;
+  position: relative;
+  bottom: 50px;
+}
 
-
+.main-works {
+  padding: 20px;
+}

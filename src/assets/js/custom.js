@@ -8,7 +8,7 @@
    /* ==============================================
     Fixed menu
     =============================================== */
-    
+
 	$(window).on('scroll', function () {
 		if ($(window).scrollTop() > 50) {
 			$('.header_style_01').addClass('fixed-menu');
@@ -16,12 +16,12 @@
 			$('.header_style_01').removeClass('fixed-menu');
 		}
 	});
-	
-	
+
+
    /* ==============================================
-		Scroll to top  
+		Scroll to top
 	============================================== */
-		
+
 	if ($('#scroll-to-top').length) {
 		var scrollTrigger = 100, // px
 			backToTop = function () {
@@ -74,12 +74,27 @@
         $(this).html('0');
         count($(this));
     });
-	
-	
+
+    var accordion = function() {
+		$('.gtco-accordion-heading').on('click', function(event){
+
+			var $this = $(this);
+
+			$this.closest('.gtco-accordion').find('.gtco-accordion-content').slideToggle(400, 'easeInOutExpo');
+			if ($this.closest('.gtco-accordion').hasClass('active')) {
+				$this.closest('.gtco-accordion').removeClass('active');
+			} else {
+				$this.closest('.gtco-accordion').addClass('active');
+			}
+			event.preventDefault();
+		});
+	};
+
+
 	/* ==============================================
      FUN FACTS -->
      =============================================== */
-	
+
 	$(".slider-wrapper").owlCarousel({
         items: 1,
         nav: true,
